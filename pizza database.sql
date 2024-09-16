@@ -127,4 +127,12 @@ CREATE TABLE `rota` (
     )
 );
 
--- analysing database based on pizza task questions::
+-- analysing database based on the Pizzeria's task questions::
+/* 1. Order Activity
+   2. Inventory Management 
+        - Total quantity by ingredients 
+        - Total cost of ingredients 
+        - Calculated cost of pizza
+        - Percentage stock remaining by ingredients 
+   3. Staff Activities.
+*/
