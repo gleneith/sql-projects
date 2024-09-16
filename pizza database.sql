@@ -2,7 +2,7 @@
 
 
 -- creating database::
-CREATE DATABASE Pizza Database
+CREATE DATABASE Pizza_Database
 
 -- creating schema::
 CREATE SCHEMA Pizza 
