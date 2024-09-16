@@ -1,11 +1,16 @@
--- project description
+/* project description
+Ben's Pizzeria wants to use the data stored to answer a few questions about the orders being made to customers, and the stock control within the pizzeria, especially Ben 
+wants to be able to know when it is time to order new stock, what ingredients go into each pizza, their quality based on the size of the pizza and the existing stock level
+within the pizzeria. As this is a pizzeria, Ben also wants data on his staff as he wants to find out what each staff member is working on based on the staff data Ben
+wants to see how much each staff shift duration and how much they are being paid 
+*/
 
 
 -- creating database::
-CREATE DATABASE Pizza_Database
+CREATE DATABASE Pizzeria
 
 -- creating schema::
-CREATE SCHEMA Pizza 
+CREATE SCHEMA Pizzeria
 
 -- creating orders table::
 
