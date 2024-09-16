@@ -121,3 +121,5 @@ CREATE TABLE `rota` (
         `row_id`
     )
 );
+
+-- analysing database based on pizza task questions::
