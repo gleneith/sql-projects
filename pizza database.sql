@@ -134,5 +134,7 @@ CREATE TABLE `rota` (
         - Total cost of ingredients 
         - Calculated cost of pizza
         - Percentage stock remaining by ingredients 
-   3. Staff Activities.
+   3. Staff Activities
+        - Staff shift duration 
+        - Staff cost per role
 */
