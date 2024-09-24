@@ -1472,16 +1472,16 @@ select city from locations
 union 
 select country from locations;
 
--- sub queries
+-- subqueries
 
--- basic subqueries with subquries in the from clause
+-- basic subqueries with subqueries in the from clause
 select * 
 from(select * from employees where coffeeshop_id in (3,4)) a;
 
 select a.employee_id, a.first_name, a.last_name
 from(select * from employees where coffeeshop_id in (3,4)) a;
 
--- basic subqueries with subqueries in the select caluse 
+-- basic subqueries with subqueries in the select clause 
 select first_name, last_name, salary,
 				(select max(salary) from employees limit 1) as max_salary 
 from employees;
@@ -1498,23 +1498,23 @@ from employees;
 select *
 from shops 
 where city_id in 
-								(select city_id from locations
-								 where country = 'United States')
+		(select city_id from locations
+		where country = 'United States');
 
 -- returning all the employees who work in the US coffee shops 
 select * 
 from employees
 where coffeeshop_id in 
-												(select city_id from locations 
-												 where country = 'United States')
+		   (select city_id from locations 
+		    where country = 'United States');
 												 
  -- returning all the employees who make over 35k and work in US coffee shops 
  select * 
 from employees
 where salary > 35000 
-and coffeeshop_id     in 
-												(select city_id from locations 
-												 where country = 'United States')
+and coffeeshop_id in 
+		(select city_id from locations 
+		where country = 'United States');
 												 
  -- 30-day moving total pay 
 select hire_date, salary,
